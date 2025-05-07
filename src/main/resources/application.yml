@@ -23,8 +23,8 @@ spring:
   profiles:
     include:
       - database
-      - oauth2
+#      - oauth2
       - local
 
-frontend:
-  domain: ${FRONT_DOMAIN}
+#frontend:
+#  domain: ${FRONT_DOMAIN}
