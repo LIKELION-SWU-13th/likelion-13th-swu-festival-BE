@@ -24,17 +24,17 @@ jobs:
                 - name: SPRING_PROFILES_ACTIVE
                   value: dev
                 - name: DEV_DB_USERNAME
-                  value: root
+                  value: ${{ secrets.DEV_DB_USERNAME }}
                 - name: DEV_DB_PASSWORD
-                  value: "20020622"
+                  value: ${{ secrets.DEV_DB_PASSWORD }}
                 - name: DEV_DB_URL
-                  value: jdbc:mariadb://svc.sel4.cloudtype.app:31846/festival
+                  value: ${{ secrets.DEV_DB_URL }}
                 - name: DB_USERNAME
-                  value: root
+                  value: ${{ secrets.DB_USERNAME }}
                 - name: DB_PASSWORD
-                  value: "98653232"
+                  value: ${{ secrets.DB_PASSWORD }}
                 - name: DB_URL
-                  value: jdbc:mysql://localhost:3306/festival
+                  value: ${{ secrets.DB_URL }}
               buildenv: []
             context:
               git:
