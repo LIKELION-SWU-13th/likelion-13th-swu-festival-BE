@@ -28,3 +28,10 @@ spring:
 
 #frontend:
 #  domain: ${FRONT_DOMAIN}
+
+naver:
+  ocr:
+    general:
+      url: ${OCR_URL}
+    secret: ${OCR_SECRET_KEY}
+
